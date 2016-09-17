@@ -17,5 +17,3 @@ def QuickSort(ar):
         more=QuickSort(more)
         return less+pivotlist+more
 
-ar=[9,5,1,4,9,2,21,35,48,3,0,99]
-print (QuickSort(ar))
