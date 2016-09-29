@@ -1,11 +1,10 @@
-def SelectionsSort(ar):
-    for i in range(len(ar)-1):
-        smallest=i
-        for j in range(i+1,len(ar)):
-            if ar[j]<ar[smallest]:
-                smallest=j
-        if ar[i]>ar[smallest]:
-            a=ar[i]
-            ar[i]=ar[smallest]
-            ar[smallest]=a
-    return ar
+def SelectionSort(arr):
+    for i in range(len(arr)-1):
+       
+        for j in range(i+1,len(arr)):
+            if arr[i]>arr[j]:
+                temp=arr[i]
+                arr[i]=arr[j]
+                arr[j]=temp
+
+    return(arr)
