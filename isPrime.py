@@ -1,6 +1,7 @@
 def IsPrime(n):
-    
-    if n==1 or n%2==0:
+    if n==2:
+        return True
+    if n<=1 or n%2==0:
         return False
     else:
         i=3
